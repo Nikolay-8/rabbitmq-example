@@ -41,6 +41,7 @@
         "symfony/web-link": "5.3.*",
         "symfony/yaml": "5.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
+        "php-amqplib/php-amqplib" : ">=2.6.1",
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {

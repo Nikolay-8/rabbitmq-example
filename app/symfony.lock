@@ -106,6 +106,12 @@
     "nikic/php-parser": {
         "version": "v4.10.5"
     },
+    "paragonie/constant_time_encoding": {
+        "version": "v2.4.0"
+    },
+    "paragonie/random_compat": {
+        "version": "v9.99.100"
+    },
     "phar-io/manifest": {
         "version": "2.0.1"
     },
@@ -115,6 +121,9 @@
     "php": {
         "version": "7.2"
     },
+    "php-amqplib/php-amqplib": {
+        "version": "v3.0.0"
+    },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
     },
@@ -123,6 +132,9 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "1.4.0"
+    },
+    "phpseclib/phpseclib": {
+        "version": "3.0.9"
     },
     "phpspec/prophecy": {
         "version": "1.13.0"

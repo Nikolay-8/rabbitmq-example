@@ -34,7 +34,7 @@ services:
       POSTGRES_PASSWORD: 'db_pass'
     volumes:
       - ./data/dump:/app/dump
-#      - ./data/postgresql:/var/lib/postgresql/data
+  #      - ./data/postgresql:/var/lib/postgresql/data
 
   rabbitmq:
     image: rabbitmq:3.7.5-management
@@ -49,5 +49,22 @@ services:
       RABBITMQ_DEFAULT_PASS: password
       RABBITMQ_DEFAULT_VHOST: my_vhost
 
+#  elasticsearch:
+#    image: docker.elastic.co/elasticsearch/elasticsearch:6.3.0
+#    container_name: 'elastic-search'
+#    environment:
+#      - discovery.type=single-node
+#      - "discovery.zen.ping.unicast.hosts=elasticsearch"
+#      - bootstrap.memory_lock=true
+#      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+#    ports:
+#      - 9200:9200
+#      - 9300:9300
+#    working_dir: /app
+#    volumes:
+#      - ../:/app
+#      - ./data/elasticsearch:/usr/share/elasticsearch/data
+
 volumes:
+  #  elasticsearch:
   postgresql:
